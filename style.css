@@ -1,0 +1,637 @@
+
+
+: root;{
+
+}
+
+*,*: :after,*:before{
+	box-sizing: inherit;
+	margin:0;
+	padding:0;
+}
+
+html{
+	position: relative;
+	margin:0;
+	padding:0;
+	font-size:62.5%;
+}
+
+.header{
+	height:100vh;
+}
+
+.header-text{
+	position: absolute;
+	z-index: 1;
+	top: 10%;
+	margin-left:30%;
+	font-size:7rem;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	text-shadow: 2px 2px 4px powderblue;
+}
+
+@media (min-width: 1024rem){
+	header-text{
+		font-size:5rem;
+	}
+}
+
+@media (max-width: 1024rem){
+	header-text{
+		font-size:5rem;
+	}
+}
+
+.bg-video{
+	z-index:-1;
+	opacity: 0.8;
+	overflow: hidden;
+	object-fit:cover;
+	width: 100%;
+	height:100vh;
+	-webkit-clip-path: polygon(38% 0, 100% 0, 100% 36%, 53% 44%, 0 54%, 0 0);
+	clip-path: polygon(38% 0, 100% 0, 100% 36%, 53% 44%, 0 54%, 0 0);
+}
+
+
+.button1{
+	position:absolute;
+	z-index:2;
+	top: 26rem;
+	left:70rem;
+	font-family: 'Dosis', sans-serif;
+	font-size: 2rem;
+	text-decoration:none;
+	padding: 25px 50px;
+	background-color: #ccccff;
+	border-radius:80px;
+	color: white;
+	 -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+	 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	 color: var(--color-light);
+	
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover{
+	-webkit-animation: headerbutton;
+	animation-duration:2s;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	
+}
+
+.button1:not(:hover){
+	opacity: .6;
+}
+
+
+.header-2{
+	font-size: 4rem;
+	font-family: 'Dosis', sans-serif;
+	color: white;
+	text-shadow: 2px 2px 5px #A9A9A9;
+
+}
+
+.body{
+	position:absolute;
+	z-index: 1;
+	top:45%;
+	margin-left:30%;
+	font-size:4px;
+	color: white;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	text-shadow: 2px 2px 4px powderblue;
+}
+
+.galaxy{
+	border-radius: 30px;
+	transform-translate:(50%, 280%);
+	height:600px;
+	width:600px;
+}
+
+.milky-way:hover span {
+  padding-right: 25px;
+}
+
+.milky-way:hover{
+	-webkit-animation: headerbutton;
+	animation-duration:2s;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	
+}
+
+.content1{
+	display:flex;
+flex-direction: row;
+}
+
+
+.information{
+	position:absolute;
+	top:60rem;
+	left:35rem;
+	color: #fff;
+  background-color: powderblue;
+	padding: 2rem;
+ 	width:30rem;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 3rem;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	animation-name: one;
+	animation-duration:10s;
+	animation-delay: 5s;}
+
+@keyframes one{
+	  0%   {background-color: powderblue; left:35rem;}
+  50%  {background-color: teal; left:45rem;}
+  100% {background-color: powderblue; left:35rem;}
+}
+
+
+.h1{
+	font-family: 'Dosis', sans-serif;
+	font-size:4rem;
+	color:white;
+}
+
+.para{
+	font-size:2rem;
+}
+
+
+.information2{
+flex-direction:column;
+position:absolute;
+top:0rem;
+left:70rem;
+	color: #fff;
+  background-color: powderblue;
+	padding: 2rem;
+ 	width:30rem;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 3rem;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  animation-name: two;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  align-content: space-between;
+  align-content: space-around;
+}
+
+@keyframes two{
+	  0%   {background-color: powderblue; left:70rem;}
+  50%  {background-color: teal; left:45rem;}
+  100% {background-color: powderblue; left:70rem;}
+}
+
+.image1{
+	height:30rem;
+	width:30rem;
+	border-radius: 2rem;
+}
+
+
+.image2{
+	height:30rem;
+	width:30rem; 
+	border-radius: 2rem;
+
+}
+
+.image3{
+	height:30rem;
+	width:30rem;
+	border-radius: 2rem;
+}
+
+.header2{
+	flex-direction:row;
+	perspective: 150rem;
+	display:flex;
+	position:absolute;
+	top:170rem;
+	width:100%;
+	height: 50rem;
+	justify-content: space-between;
+	justify-content: space-around;
+}
+
+.flip-card1 {
+	top
+  background-color: transparent;
+  width: 30rem;
+  height: 50rem;
+  perspective: 100rem; 
+
+}
+
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front1, .flip-card-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front1 {
+  background-image:url(tats.jpeg);
+  color: black;
+  border-radius: 3rem;
+}
+.flip-card-back1 {
+  
+    background-image:url(tats.jpeg);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 3rem;
+}
+
+.flip-card2 {
+  background-color: transparent;
+  width: 30rem;
+  height: 50rem;
+  perspective: 100rem; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+
+
+.flip-card-front2 {
+ background-image: url(coru.jpeg);
+  color: black;
+  border-radius: 3rem;
+
+}
+.flip-card-back2 {
+ background-image: url(coru.jpeg);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 3rem;
+}
+
+.flip-card3 {
+  background-color: transparent;
+  width: 30rem;
+  height: 50rem;
+  perspective: 100rem; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-card3:hover .flip-card-inner3 {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front3, .flip-card-back3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front3 {
+  background-image: url(tako.jpeg);
+  color: black;
+  border-radius: 3rem;
+}
+.flip-card-back3 {
+  background-image: url(tako.jpeg);
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 3rem;
+}
+ .text1{
+ 	color: white;
+ 	font-family: 'Dosis', sans-serif;
+ 	text-align: center;
+ 	font-size:5rem;
+ }
+
+
+.text2{
+	color: white;
+ 	font-family: 'Dosis', sans-serif;
+ 	text-align: center;
+ 	font-size:5rem;
+ }
+
+ .text3{
+ 	color:black;
+ 	font-family: 'Dosis', sans-serif;
+ 	text-align: center;
+ 	font-size:5rem;
+
+ }
+
+ .p1{
+ 	color: white;
+ 	font-family: 'Dosis', sans-serif;
+ 	text-align: center;
+ 	font-size:3rem;
+ }
+
+ .body1{
+ 	color: white;
+ 	font-family: 'Fira Sans', sans-serif;
+ 	text-align: center;
+ 	font-size:2.1rem;
+ }
+
+ .p2{
+ 	color: white;
+ 	font-family: 'Dosis', sans-serif;
+ 	text-align: center;
+ 	font-size:3rem;
+ }
+
+
+ .body2{
+ 	color: white;
+ 	font-family: 'Fira Sans', sans-serif;
+ 	text-align: center;
+ 	font-size:2.1rem;
+ }
+
+
+ .p3{
+ 	color: black;
+ 	font-family: 'Dosis', sans-serif;
+ 	text-align: center;
+ 	font-size:3rem;
+ }
+
+
+ .body3{
+ 	color: white;
+ 	font-family: 'Fira Sans', sans-serif;
+ 	text-align: center;
+ 	font-size:2.1rem;
+ }
+
+.header3{
+	
+	flex-direction:row;
+	perspective: 150rem;
+	display:flex;
+	position:absolute;
+	top:250rem;
+	width:100%;
+	height: 300vh;
+	justify-content: space-between;
+	justify-content: space-around;
+	background-image: linear-gradient(to bottom right, powderblue, teal);
+}
+
+.h4{
+	font-size:8rem;
+	font-family: 'Dosis', sans-serif;
+	left: 60rem;
+	color: white;
+text-shadow: 2px 2px 4px grey
+}
+
+
+@media (min-width: 1024rem){
+	h4{
+		font-size:5rem;
+	}
+}
+
+@media (max-width: 1024rem){
+	h4{
+		font-size:10rem;
+	}
+}
+
+.review1{
+	background-color: powderblue;
+	height:300vh;
+	width:30rem;
+
+}
+
+.text5{
+
+	color: white;
+ 	font-family: 'Fira Sans', sans-serif;
+ 	text-align: center;
+ 	font-size:4rem;
+}
+
+.bdy6{
+	left:10rem;
+	font-size:4.5rem;
+	font-family: 'Dosis', sans-serif;
+	color: black;
+}
+
+@media (min-width: 1024rem){
+	.bdy6{
+		font-size:5rem;
+	}
+}
+
+@media (max-width: 1024rem){
+	.bdy6{
+		font-size:2.5rem;
+	}
+}
+
+}
+
+.navigation_checkbox{
+	display: none;
+}
+
+.navigation_button{
+	background-color:white;
+	height: 6rem;
+	width: 6rem;
+	border-radius: 50%;
+	position: fixed;
+	top: 6rem;
+	right: 6rem;
+	z-index: 2000;
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+	text-align: center;
+	cursor: pointer;
+}
+
+.navigation_icon{
+	position: relative;
+	margin-top: 3rem;
+}
+
+.navigation_icon::before, .navigation_icon::after{
+	content: "";
+}
+
+.navigation_icon::before{
+	position: absolute;
+	top: -0.8rem;
+	left: 0;
+}
+
+.navigation_icon::after{
+	position: absolute;
+	top: 0.8rem;
+	left: 0;
+}
+
+.navigation_icon, .navigation_icon::before, .navigation_icon::after{
+	width: 3rem;
+	height: 2px;
+	background-color: #333;
+	display: inline-block;
+	transition: all 0.2s;
+}
+
+.navigation_button:hover .navigation_button::before{
+	top: -1rem;
+}
+
+.navigation_button:hover .navigation_button::after{
+	top: 1rem;
+}
+
+.navigation_checkbox:checked + .navigation_button .navigation_icon{
+	background-color: transparent;
+}
+
+.navigation_checkbox:checked + .navigation_button .navigation_icon::before{
+	transform:rotate(135deg);
+	top: 0;
+}
+
+.navigation_checkbox:checked + .navigation_button .navigation_icon::after{
+	transform:rotate(-135deg);
+	top: 0;
+}
+
+.navigation_list{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	list-style: none;
+	text-align: center;
+	width: 100%;
+}
+
+.navigation_item{
+	margin: 1rem;
+}
+
+.navigation_nav{
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1500;
+	opacity: 0;
+	width: 0%;
+	display: none;
+	transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.navigation_background{
+	height: 6rem;
+	width: 6rem;
+	border-radius: 50%;
+	position: fixed;
+	top: 6rem;
+	right: 6rem;
+	background-image: linear-gradient(white,powderblue);
+	z-index: 1000;
+	transition: transform 0.10s;
+}
+
+.navigation_link, .navigation_link:link, .navigation_link:visited{
+	display: inline-block;
+	font-size: 3rem;
+	font-weight: 300;
+	font-family: 'Dosis', sans-serif;
+	padding: 1rem 2rem;
+	color: black;
+	text-decoration: none;
+	text-transform: lowercase;
+	background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+	background-size: 240%;
+	transition: all 0.4s;
+}
+
+.navigation_link:hover, .navigation_link:active{
+	background-position: 100%;
+	color: rgba(50, 50, 50, 1);
+	transform: translateX(1rem);
+}
+
+.navigation_checkbox:checked~.navigation_background{
+	transform: scale(80);
+}
+
+.navigation_checkbox:checked~.navigation_nav{
+	opacity: 1;
+	width: 100%;
+	display: block;
+}
